@@ -3,10 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import { authRouter } from './routes/auth';
-import { animeRouter } from './routes/anime';
-import { userRouter } from './routes/user';
-import { chatRouter } from './routes/chat';
+import { aiRouter } from './routes/ai';
 
 dotenv.config();
 
@@ -18,15 +15,15 @@ app.use(helmet());
 app.use(express.json());
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/anime-azura')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/pos-system')
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
 // Routes
-app.use('/api/auth', authRouter);
-app.use('/api/anime', animeRouter);
-app.use('/api/users', userRouter);
-app.use('/api/chat', chatRouter);
+app.use('/api/ai', aiRouter);
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok' });
+});
 
 // Error handling middleware
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {

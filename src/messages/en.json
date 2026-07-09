@@ -1,0 +1,24 @@
+{
+  "common": {
+    "title": "Smart POS",
+    "welcome": "Welcome to Smart POS"
+  },
+  "setup": {
+    "title": "Setup your Restaurant",
+    "description": "Configure your place to get started"
+  },
+  "pos": {
+    "title": "Terminal",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "total": "Total",
+    "empty": "Empty",
+    "success": "Order placed successfully"
+  },
+  "tables": {
+    "title": "Tables",
+    "available": "Available",
+    "occupied": "Occupied",
+    "reserved": "Reserved"
+  }
+}
