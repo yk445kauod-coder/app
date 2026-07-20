@@ -18,6 +18,8 @@ jobs:
     - run: npm install
     - run: npm run build
     - name: Deploy to Cloudflare Pages
+      # Only run if secrets are present, preventing Action failure
+      if: "${{ secrets.CLOUDFLARE_API_TOKEN != '' }}"
       uses: cloudflare/pages-action@v1
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
