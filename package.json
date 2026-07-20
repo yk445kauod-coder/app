@@ -11,18 +11,23 @@
     "deploy": "netlify deploy --prod"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1077.0",
     "@firebase/auth": "^1.11.0",
     "@heroicons/react": "^2.2.0",
+    "@supabase/supabase-js": "^2.110.0",
     "@tanstack/react-query": "^5.90.2",
     "@types/unsplash-js": "^7.0.0",
     "axios": "^1.12.2",
     "firebase": "^12.3.0",
     "framer-motion": "^12.23.22",
     "jotai": "^2.15.0",
+    "lucide-react": "^1.22.0",
     "next": "15.5.4",
+    "next-intl": "^4.13.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-firebase-hooks": "^5.1.1",
+    "recharts": "^3.9.1",
     "unsplash-js": "^7.0.20"
   },
   "devDependencies": {

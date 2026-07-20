@@ -1,0 +1,24 @@
+{
+  "common": {
+    "title": "Sphinx POS",
+    "welcome": "Welcome to Sphinx POS"
+  },
+  "setup": {
+    "title": "Setup Sphinx POS",
+    "description": "Configure your place to get started with Sphinx POS"
+  },
+  "pos": {
+    "title": "Sphinx POS Terminal",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "total": "Total",
+    "empty": "Empty",
+    "success": "Order placed successfully in Sphinx POS"
+  },
+  "tables": {
+    "title": "Tables",
+    "available": "Available",
+    "occupied": "Occupied",
+    "reserved": "Reserved"
+  }
+}
